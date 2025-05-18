@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search by name or symbol" autocomplete="off" />
+      <button type="button" onclick="sortByMarketCap()">Sort by Market Cap</button>
+      <button type="button" onclick="sortByPercentageChange()">Sort by % Change</button>
+    </div>
+    <table id="cryptoTable">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Price (USD)</th>
+          <th>Total Volume</th>
+          <th>% Change (24h)</th>
+          <th>Market Cap</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
